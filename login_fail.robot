@@ -1,7 +1,6 @@
 *** Settings ***
 Library    Selenium2Library
-Suite Setup    Open browser    http://localhost:7272    chrome
-Suite Teardown    Close browser
+Test setup    Go to    http://localhost:7272
 
 *** Testcases ***
 Log in fail with wrong username
