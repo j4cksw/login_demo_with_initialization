@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20160717 11:20:11.101" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<robot generated="20160717 11:21:32.174" generator="Robot 3.0 (Python 2.7.10 on darwin)">
 <suite source="/Users/JackSW/workspace/kata/robot/login_demo_with_initilization/login_success.robot" id="s1" name="Login Success">
-<test id="s1-t1" name="Log in success">
-<kw name="Open Browser" library="Selenium2Library">
+<kw type="setup" name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>http://localhost:7272</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20160717 11:20:11.369" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272'</msg>
-<status status="PASS" endtime="20160717 11:20:13.311" starttime="20160717 11:20:11.369"></status>
+<msg timestamp="20160717 11:21:32.248" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272'</msg>
+<status status="PASS" endtime="20160717 11:21:34.121" starttime="20160717 11:21:32.248"></status>
 </kw>
+<test id="s1-t1" name="Log in success">
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
 <arg>username_field</arg>
 <arg>demo</arg>
 </arguments>
-<msg timestamp="20160717 11:20:13.312" level="INFO">Typing text 'demo' into text field 'username_field'</msg>
-<status status="PASS" endtime="20160717 11:20:13.397" starttime="20160717 11:20:13.312"></status>
+<msg timestamp="20160717 11:21:34.123" level="INFO">Typing text 'demo' into text field 'username_field'</msg>
+<status status="PASS" endtime="20160717 11:21:34.217" starttime="20160717 11:21:34.123"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -26,31 +26,31 @@
 <arg>password_field</arg>
 <arg>mode</arg>
 </arguments>
-<msg timestamp="20160717 11:20:13.397" level="INFO">Typing text 'mode' into text field 'password_field'</msg>
-<status status="PASS" endtime="20160717 11:20:13.455" starttime="20160717 11:20:13.397"></status>
+<msg timestamp="20160717 11:21:34.217" level="INFO">Typing text 'mode' into text field 'password_field'</msg>
+<status status="PASS" endtime="20160717 11:21:34.279" starttime="20160717 11:21:34.217"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>login_button</arg>
 </arguments>
-<msg timestamp="20160717 11:20:13.456" level="INFO">Clicking button 'login_button'.</msg>
-<status status="PASS" endtime="20160717 11:20:13.526" starttime="20160717 11:20:13.456"></status>
+<msg timestamp="20160717 11:21:34.279" level="INFO">Clicking button 'login_button'.</msg>
+<status status="PASS" endtime="20160717 11:21:34.372" starttime="20160717 11:21:34.279"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Welcome Page</arg>
 </arguments>
-<status status="PASS" endtime="20160717 11:20:13.541" starttime="20160717 11:20:13.526"></status>
+<status status="PASS" endtime="20160717 11:21:34.386" starttime="20160717 11:21:34.372"></status>
 </kw>
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20160717 11:20:13.608" starttime="20160717 11:20:13.541"></status>
-</kw>
-<status status="PASS" endtime="20160717 11:20:13.608" critical="yes" starttime="20160717 11:20:11.369"></status>
+<status status="PASS" endtime="20160717 11:21:34.386" critical="yes" starttime="20160717 11:21:34.121"></status>
 </test>
-<status status="PASS" endtime="20160717 11:20:13.609" starttime="20160717 11:20:11.105"></status>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160717 11:21:34.449" starttime="20160717 11:21:34.386"></status>
+</kw>
+<status status="PASS" endtime="20160717 11:21:34.450" starttime="20160717 11:21:32.176"></status>
 </suite>
 <statistics>
 <total>
