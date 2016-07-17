@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160717 11:20:11.101" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<suite source="/Users/JackSW/workspace/kata/robot/login_demo_with_initilization/login_success.robot" id="s1" name="Login Success">
+<test id="s1-t1" name="Log in success">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://localhost:7272</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20160717 11:20:11.369" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272'</msg>
+<status status="PASS" endtime="20160717 11:20:13.311" starttime="20160717 11:20:11.369"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username_field</arg>
+<arg>demo</arg>
+</arguments>
+<msg timestamp="20160717 11:20:13.312" level="INFO">Typing text 'demo' into text field 'username_field'</msg>
+<status status="PASS" endtime="20160717 11:20:13.397" starttime="20160717 11:20:13.312"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password_field</arg>
+<arg>mode</arg>
+</arguments>
+<msg timestamp="20160717 11:20:13.397" level="INFO">Typing text 'mode' into text field 'password_field'</msg>
+<status status="PASS" endtime="20160717 11:20:13.455" starttime="20160717 11:20:13.397"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>login_button</arg>
+</arguments>
+<msg timestamp="20160717 11:20:13.456" level="INFO">Clicking button 'login_button'.</msg>
+<status status="PASS" endtime="20160717 11:20:13.526" starttime="20160717 11:20:13.456"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Welcome Page</arg>
+</arguments>
+<status status="PASS" endtime="20160717 11:20:13.541" starttime="20160717 11:20:13.526"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160717 11:20:13.608" starttime="20160717 11:20:13.541"></status>
+</kw>
+<status status="PASS" endtime="20160717 11:20:13.608" critical="yes" starttime="20160717 11:20:11.369"></status>
+</test>
+<status status="PASS" endtime="20160717 11:20:13.609" starttime="20160717 11:20:11.105"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login Success" pass="1">Login Success</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
